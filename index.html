@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilo.css">
+    <title>DH Energy</title>
+</head>
+<body>
+    <!-- menu -->
+    <header class="header">
+        <h3><strong>DH</strong> Energy</h3>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mission">our mission</a></li>
+                <li><a class="active" href="#budget">budget</a></li>
+            </ul>
+        </nav>
+    </header>
+       <!-- banner -->
+       <div id="banner1">
+           <div class="text">
+               <h1>Energia barata e sustentável</h1>
+               <p>Economize em sua conta de energia</p>
+               <button>Vamos lá</button>
+           </div>
+       </div>
+       <!-- about us -->
+       <div id="about">
+           <h1>Sobre nós</h1>
+           <div class="grid1">
+               <div class="card-img">
+                   <img src="./assets/img2/banner3.jpeg" alt="">
+               </div>
+               <div class="card-img">
+                   <h2>Somos uma empresa que valoriza a vida.</h2>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Incidunt qui ullam, aliquid inventore quisquam, natus alias
+                         repudiandae totam repellendus sapiente quidem assumenda
+                          eaque voluptates? Rerum, nobis! Tenetur placeat quas
+                           atque?</p>
+                           <button>Veja mais</button>
+               </div>
+           </div>
+       </div>
+       <!-- our mission -->
+       <div id="mission">
+           <h1>Nossa missão</h1>
+           <div class="grid2">
+               <div class="card-img2">
+                   <img src="./assets/img4/control.svg" alt="">
+                   <h4>Controle tudo direto do seu smartphone</h4>
+               </div>
+               <div class="card-img2">
+                   <img src="./assets/img4/economic.svg" alt="">
+                   <h4>Economize até 70% todo mês</h4>
+               </div >
+               <div class="card-img2">
+                   <img src="./assets/img4/gestao.svg" alt="">
+                   <h4>Acompanhe em tempo real seu consuma e economia</h4>
+               </div>
+           </div>
+       </div>
+       <!-- budget -->
+    <section class="inner-page" id="budget">
+        <div class="container">
+          <div class="container">
+            <div class="box">
+                <h1>Simulador Solar</h1>
+             
+             <input type="text" id="txtCep" placeholder="CEP">
+            <input type="text" id="txtCidade" placeholder="Cidade">
+            <input type="text" id="txtEstado" placeholder="Estado">
+            <input type="text" id="txtBairro" placeholder="Bairro">
+            <input type="text" id="txtRua" placeholder="Rua">
+            <input type="text" id="txtComplemento" placeholder="Complemento">
+            <span>Valor do seu consumo de energia</span><input type="text" placeholder="EX:200" id="simulador">
+                <button onclick="simula()">Simular meu gerador</button><br>
+                <div id="root"></div>
+            </div>
+        </div>
+        </div>
+      </section>
+      <script src="./assets/js/jquery-3.5.1.min.js"></script>
+      <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/simulator.js"></script>
+</body>
+</html>
